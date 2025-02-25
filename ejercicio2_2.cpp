@@ -1,20 +1,18 @@
-#include <iostream>
 #include <stdio.h>
-
+#include <iostream>
 using namespace std;
-
 int main()
 {
-    int num; // Variable para almacenar el numero ingresado por el usuario
-    cout << "Ingrese un numero: ";
-    cin >> num;
-
-    if ((num % 2 == 0) && (num > 0)) // Si el numero es par y positivo se imprime el mensaje
+    int numero;
+    std::cout << "numerito:";
+    std::cin >> numero;                    // en esta parte se le solicita al usuario el numero
+    if ((numero % 2 == 0) && (numero > 0)) // aqui se evalua si el residuo de la division del numero es 0(modulo) entonces es par
+                                           // aqui evaluas si el numero es positivo
     {
-        cout << "El numero es par y positivo" << endl;
+        std::cout << "felicitaciones es par y positivo wuuuu"; // si se cumple se muestra el mensaje :D
     }
-    else // Si no se cumple la condicion se imprime el que no cumple con las especificaciones
+    else
     {
-        cout << "El numero no cumple con las especificaciones" << endl;
+        std::cout << "parece que tu numero no cumple con las especificaciones";
     }
-}
+};
